@@ -1,2 +1,2 @@
-# ProgettoPiaggio-FrontEnd
-Contiene la parte Front-End del progetto Piaggio
+# Piaggio-frontend-project
+Contains the Front-End part of the Piaggio project

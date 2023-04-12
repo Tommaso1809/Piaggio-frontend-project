@@ -4,12 +4,12 @@ body{
   margin: 0px;
 }
 
-/*
+
 #UpperMenu{
   width: 100%;
   height: 60px;
-  /*position: fixed;*/
-  background-color: #0096c3;
+  position: fixed;
+  background-color: #003F8F;;
 
   display:flex;
   align-items: center;
@@ -18,7 +18,7 @@ body{
 
 #UpperMenu ul{
 
-  margin: 200px;
+  margin: 100px;
 }
 
 #UpperMenu li{
@@ -32,6 +32,7 @@ body{
 
 }
 
+
 #UpperMenu li:hover{
 
   cursor: pointer;
@@ -42,13 +43,14 @@ body{
 
     height: 37px;
     float: left;
+	padding-right:200px;
 }
 
 #PictureSpace{
 
-  background-color: #ddd;
+  background-color:white;
   width: 100%;
-  height: 600px;
+  height:auto;
   text-align: center;
   font-family: "Rubik";
   font-weight: bold;
@@ -63,14 +65,14 @@ body{
 
 #PictureSpace img{
 
-  height: 50%;
-
+  width: 85%;
+  height: auto;
+  float: none;
 }
-
 
 #DescriptionSpace{
 
-    background-color: #A2A29E;
+  background-color: #003F8F;
     width: 100%;
     height: 600px;
     text-align: center;
@@ -83,12 +85,15 @@ body{
     justify-content: center;
 }
 
+#Description{
+
+	padding-bottom:98px;
+}
 #CreditsSpace {
 
   width: 100%;
   height: 100%;
-
-  background-color: #0096c3;
+  background-color:#FFF;
 
   display:flex;
   align-items: center;
@@ -106,7 +111,7 @@ h1{
 
   font-family: "Rubik";
   font-weight: bold;
-  font-size: 45px;
+  font-size: 50px;
   color: white;
 }
 
@@ -118,12 +123,18 @@ h5{
   color: white;
 }
 
-p{
+hr{
 
-  font-family: "Rubik";
-  font-weight: bold;
+  width: 75%;
+  margin-bottom: 75px;
+}
+
+#CreditsSpace p{
+
+  font-family: "Sofia Sans";
+  /*font-weight: bold;*/
   font-size: 18px;
-  color: white;
+  color:#003F8F;
 }
 
 
@@ -131,7 +142,7 @@ p{
   float: left;
   width: 50%;
   padding: 50px;
-  height: 400px;
+  height: 250px;
   background-color: #0096c3;
 }
 
@@ -151,5 +162,3 @@ a{
 * {
   box-sizing: border-box;
 }
-
-*/

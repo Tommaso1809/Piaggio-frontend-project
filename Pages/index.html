@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
   <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Style/stile.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
@@ -13,26 +14,30 @@
   <body>
 
       <div id="UpperMenu">
-
-        <img src="https://www.museopiaggio.it/build/images/logo.19c987cc.svg" alt="Logo Piaggio"  />
-
+		<li style="text-align: left"> <a href="https://www.museopiaggio.it/" target="_blank"> <img src="https://www.museopiaggio.it/build/images/logo.19c987cc.svg" alt="Logo Piaggio"  /> </a> </li>
           <div id="Upper_into">
-              <ul>
-                <li>Nome Vespa</li>
-                <li>Menu a Tendina</li>
-              </ul>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Menu</a>
+				<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+		</div>
+  </li>
           </div>
       </div>
 
       <div id="PictureSpace" >
 
           <div id="Picture_into">
-          <section>
+		  
+          <center>
+		  <section>
             <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-01.jpg" alt="1">
             <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-04.jpg" alt="2">
-            <img class="mySlides" src="" alt="3">
           </section>
-
+		</center>
+		
         </div>
       </div>
 <br>

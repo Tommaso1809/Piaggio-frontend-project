@@ -5,83 +5,37 @@ body{
 }
 
 
-#UpperMenu{
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  background-color: #003F8F;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ul.NavBar {
+	top: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #003F8F;
 }
 
-#UpperMenu ul{
-
-  margin: 70px;
-  padding-left: 500px;
-
+ul.NavBar li{float:left}
+ul.NavBar li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
+ul.NavBar li a:hover:not(.active){background-color: inherit;}
+ul.NavBar li a.active{background-color: inherit;}
+ul.NavBar li.right{
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	float: right;
+	color: white;
+	}
 
-#UpperMenu li{
-
-  display: inline;
-  margin: 0px 60px;
-  font-size: 28px;
-  font-family: "Rubik";
-  font-weight: bold;
-  color: white;
-
+@media screen and(max-widht: 600px){
+	ul.NavBar li.right, ul.NavBar li{float: none;}
 }
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-#UpperMenu li:hover{
-
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-#UpperMenu img{
-
-    height: 37px;
-    float: left;
-	position: left;
-
-}
-
 #PictureSpace{
 
   background-color:white;
@@ -101,16 +55,18 @@ li.dropdown {
 
 #PictureSpace img{
 
-  width: 65%;
+  width: 50%;
+  height: 40%;
   height: auto;
   float: none;
 }
+
 
 #DescriptionSpace{
 
   background-color: #003F8F;
     width: 100%;
-    height: 800px;
+    height: auto;
     text-align: center;
     font-family: "Rubik";
     font-weight: bold;
@@ -166,19 +122,12 @@ hr{
 }
 
 
-#DescriptionSpace p{
-
-  font-family:"Leckerli One";
-  font-size: 18px;
-  color: white;
-}
-
 
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  /*padding: 10px;*/
+  height: 120px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -197,4 +146,147 @@ a{
 
 * {
   box-sizing: border-box;
+}
+
+#Description_into  h1{
+
+    font-family:"Leckerli One";
+    font-size: 45px;
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+
+#Description_into h2{
+
+  font-family: "Akshar";
+  color:white;
+  font-size: 35px;
+  text-shadow: 1px 1px black;
+}
+
+#Description_into p{
+
+  font-family: "Akshar";
+  color:white;
+  font-size: 25px;
+
+}
+
+.c {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.r:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #CreditsSpace h2{
+
+    font-size: 15px;
+  }
+
+  #text p{
+
+      margin:0px;
+
+  }
+
+  #info p{
+
+    font-size: 25px;
+  }
+
+  #info{
+
+    align-items: center;
+  }
+
+  #footer p{
+
+    font-size: 13px;
+  }
+
+
+  #Piaggio img{
+
+    position: absolute;
+    left: -9999px;
+  }
+
+  #Marconi img{
+
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+@media only screen and (max-width:800px) {
+
+  #CreditsSpace h2{
+
+    font-size: 20px;
+  }
+
+  #Piaggio img{
+
+    position: absolute;
+    left: -9999px;
+  }
+
+  #Marconi img{
+
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+@media only screen and (max-width:360px){
+
+  #CreditsSpace h2{
+
+    font-size:16px;
+  }
+
+  #text p{
+
+
+      font-size: 20px;
+
+
+  }
+
+  #info p{
+
+    font-size: 15px;
+  }
+
+  #info h2{
+
+    font-size: 25px;
+  }
+
+  .c {
+    float: left;
+    width: 50%;
+    padding: 1px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  /* Clear floats after the columns */
+  .r:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
 }

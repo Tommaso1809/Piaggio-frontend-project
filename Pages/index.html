@@ -10,6 +10,10 @@
 	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 
@@ -18,30 +22,22 @@
   </head>
   <body>
 
-      <div id="UpperMenu">
-		<li style="text-align: left"> <a href="https://www.museopiaggio.it/" target="_blank"> <img src="https://www.museopiaggio.it/build/images/logo.19c987cc.svg" alt="Logo Piaggio"  /> </a> </li>
-          <div id="Upper_into">
-				<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Menu</a>
-				<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-		</div>
-  </li>
-          </div>
-      </div>
+    <ul class="NavBar">
+      <li> <a href="#logo"><img src="../img/logo-museo-piaggio.svg" </a> </li>
+      <li class="right" href="#home"> HOME </a> </li>
+    </ul>
 
       <div id="PictureSpace" >
 
           <div id="Picture_into">
 
-          <center>
-		  <section>
-            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-01.jpg" alt="1">
+        <center>
+		      <section>
+            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-01.jpg" alt="1" >
             <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-04.jpg" alt="2">
           </section>
-		</center>
+        </center>
+
 
         </div>
       </div>
@@ -50,7 +46,29 @@
 
       <div id="DescriptionSpace">
         <div id="Description_into">
+
+          <div id="info">
+            <h1>VESPA VENICE</h1>
+
+            <div class="r">
+              <div class="c">
+                <h2>MODELLO</h2>
+                <p>Vespa Venice</p>
+                <h2>CILINDRATA</h2>
+                <p>50 CC</p>
+              </div>
+              <div class="c">
+                <h2>ARTISTA</h2>
+                <p>Luca Moretto</p>
+                <h2>ANNO</h2>
+                <p>1976</p>
+              </div>
+            </div>
+          </div>
+            <br>
+
                <hr>
+            <div id="text" style="margin: 100px;">
             <p>Questa è la Vespa-VENICE, opera dell'artista Luca Moretto, realizzata nel 1976
               in occasione della Biennale di Venezia; si tratta di una vespa 50 rivisitata in
               chiave Pop con estro e fantasia attraverso una personale ricerca e studio da parte
@@ -66,31 +84,36 @@
               Impossibile non essere travolti dalla gioia di vivere che l’artista celebra nel suo motto: “L’ottimismo può fondare le sue radici anche nel dolore”.
             </p>
 
-            <hr style="margin-top:75px;">
+           </div>
+
+            <hr>
             <audio controls >
               <source src="horse.ogg" type="audio/ogg">
               <source src="horse.mp3" type="audio/mpeg">
             </audio>
+            <br><br><br>
 		</div>
 	</div>
 
       <footer id="CreditsSpace" style="  width: 100%; height:4px;">
         <div class="row">
 
-            <div class="column">
-                <img src="https://www.museopiaggio.it/build/images/logo.19c987cc.svg" style="padding-left:250px;margin-top:35px;"/>
+            <div class="column" id="Piaggio">
+                <img src="https://www.museopiaggio.it/build/images/logo.19c987cc.svg" style="padding-left:325px;margin-top:35px;"/>
             </div>
             <div class="column">
               <h2 style="padding-top:15px;">In collaborazione con <br>ITIS MARCONI PONTEDERA</h2>
             </div>
-            <div class="column">
+            <div class="column" id="Marconi">
                 <img src="https://www.marconipontedera.edu.it/wp-content/uploads/2022/12/cropped-Logo-ITI_SCONTORNATO_535x535.png" style="height:150px; float:left; padding-left:100px;"/>
             </div>
         </div>
 
-        <div style="padding-bottom:1px;">
+        <br>
+        <div id="footer" style="padding-top: 0px;">
           <p >Indirizzo:Viale R.Piaggio, 7-56025 &nbsp;&nbsp;Telefono:0587 27171&nbsp;&nbsp;Email:museo@museopiaggio.it</p>
-          <hr id="footer"style="border:2px solid #003F8F;">
+          <br>
+        <!--- <hr id="footer"style="border:2px solid #003F8F;"> --->
         </div>
 
       </footer>

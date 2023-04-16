@@ -8,7 +8,7 @@
      <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 	   <link rel="preconnect" href="https://fonts.googleapis.com">
 	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500&display=swap" rel="stylesheet">
@@ -22,9 +22,18 @@
   </head>
   <body>
 
-    <ul class="NavBar">
-      <li> <a href="#logo"><img src="../img/logo-museo-piaggio.svg" </a> </li>
-      <li class="right" href="#home"> HOME </a> </li>
+    <ul class="NavBar" style="height:62px;">
+      <li> <a href="#logo"><img src="../img/logo-museo-piaggio.svg"/> </a> </li>
+      <li class="right" href="#home">
+        <div class="dropdown" style="padd">
+        <button class ="dropbtn"><i class="fa fa-reorder" style="font-size:30px;padding-right:110px;"></i></button>
+        <div class="dropdown-content">
+         <a href="#" style="color: black;text-align: left;">Link 1</a>
+         <a href="#" style="color: black;text-align: left;">Link 2</a>
+         <a href="#" style="color: black;text-align: left;">Link 3</a>
+       </div>
+     </div>
+      </li>
     </ul>
 
       <div id="PictureSpace" >
@@ -33,8 +42,8 @@
 
         <center>
 		      <section>
-            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-01.jpg" alt="1" >
-            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-04.jpg" alt="2">
+            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-01.jpg" alt="1" />
+            <img class="mySlides" src="https://lucamoretto.com/img/design/vespa-venice/zoom/VespaVenice-03.jpg" alt="2"/>
           </section>
         </center>
 
@@ -119,13 +128,9 @@
       </footer>
 
 
-
-
-
     </div>
 
     <script type="text/javascript" src="../Scripts/script.js"></script>
-
 
   </body>
 </html>

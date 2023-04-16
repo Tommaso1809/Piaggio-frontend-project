@@ -6,6 +6,16 @@ body{
 
 
 
+.mySlides {
+  display:none;
+  width: 400px;
+  height: 400px;
+  margin-left: 205px;
+
+}
+
+
+
 ul.NavBar {
 	top: 0;
 	list-style-type: none;
@@ -16,6 +26,7 @@ ul.NavBar {
 }
 
 ul.NavBar li{float:left}
+
 ul.NavBar li a{
 	display: block;
 	color: white;
@@ -33,6 +44,57 @@ ul.NavBar li.right{
 	color: white;
 	}
 
+.right{
+
+  color:black;
+
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+
+}
+
+.dropdown-content a {
+
+  font-family:"Akshar";
+  color: black;
+  font-weight: bold;
+  
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 @media screen and(max-widht: 600px){
 	ul.NavBar li.right, ul.NavBar li{float: none;}
 }
@@ -42,8 +104,6 @@ ul.NavBar li.right{
   width: 80%;
   height:auto;
   text-align: center;
-  font-family: "Rubik";
-  font-weight: bold;
   color: white;
 
   display:flex;
@@ -192,6 +252,15 @@ a{
   #CreditsSpace h2{
 
     font-size: 15px;
+  }
+
+  #PictureSpace img{
+
+    width: 50%;
+    height: 65%;
+    height: auto;
+    float: none;
+    margin-left:100px;
   }
 
   #text p{
